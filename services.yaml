@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: flower-art-love-line-api
+    env: node
+    plan: free
+    buildCommand: ""
+    startCommand: node index.js
+    envVars:
+      - key: CHANNEL_SECRET
+        sync: false
+      - key: CHANNEL_ACCESS_TOKEN
+        sync: false
